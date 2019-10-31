@@ -2,14 +2,13 @@ package constructors;
 
 /**
  * Returns the sum of this Fraction
- * and the parameter frac. The sum
- * returned is NOT simplified.
+ * and the parameter frac. 
  * 
  * @author User
  */
 
 public class Fraction {
-	private int numerator, denominator;
+	private double numerator, denominator;
 	
 	/**
 	 * Zero parameter constructor
@@ -20,10 +19,10 @@ public class Fraction {
 		this(0,1);
 	}
 	
-	/** Constructor with one int parameter
+	/** Constructor with one double parameter
 	 *
 	 * @param number the numerator*/
-	public Fraction(int number) {
+	public Fraction(double number) {
 		//creates number/1
 		this(number, 1);
 	}
@@ -42,7 +41,7 @@ public class Fraction {
 	 * @param num the numerator
 	 * @param denom the denominator
 	 */
-	public Fraction(int num, int denom) {
+	public Fraction(double num, double denom) {
 		setNumerator(num);
 		setDenominator(denom);
 	}
@@ -51,7 +50,7 @@ public class Fraction {
 	 * 
 	 * @return numerator the numerator
 	 */
-	public int getNumerator() {
+	public double getNumerator() {
 		return numerator;
 	}
 	
@@ -59,7 +58,7 @@ public class Fraction {
 	 * 
 	 * @param numerator the numerator
 	 */
-	public void setNumerator(int numerator) {
+	public void setNumerator(double numerator) {
 		this.numerator = numerator;
 	}
 	
@@ -67,7 +66,7 @@ public class Fraction {
 	 * 
 	 * @return denominator the denominator
 	 */
-	public int getDenominator() {
+	public double getDenominator() {
 		return denominator;
 	}
 	
@@ -75,7 +74,7 @@ public class Fraction {
 	 * 
 	 * @param denominator the denominator
 	 */
-	public void setDenominator(int denominator) {
+	public void setDenominator(double denominator) {
 		this.denominator = denominator;
 	}
 	
@@ -83,7 +82,7 @@ public class Fraction {
 	 * 
 	 * @return numerator/denominator numerator divided by denominator
 	 */
-	public int compute() {
+	public double compute() {
 		return numerator/denominator;
 	}
 }
