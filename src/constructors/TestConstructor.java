@@ -7,6 +7,7 @@ public class TestConstructor {
 		Person person = new Person();
 		Person person1 = new Person("Smith");
 		
+		// Print names
 		System.out.println("person name: " + person.getName());
 		System.out.println("person name: " + person1.getName());
 
@@ -15,6 +16,7 @@ public class TestConstructor {
 		Rectangle r2 = new Rectangle(7);
 		Rectangle r3 = new Rectangle(4,3);
 		
+		// Print areas
 		System.out.println(r1.area());
 		System.out.println(r2.area());
 		System.out.println(r3.area());
